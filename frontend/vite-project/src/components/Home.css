@@ -1,0 +1,260 @@
+/* General Styles */
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+/* Header Section */
+header {
+  position: fixed;
+  display: flex;
+  z-index: 1000;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 20px;
+  color: white;
+  transition: background 0.3s ease-in-out;
+}
+.logo img {
+  height: 70px;
+  width: 70px;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  border: 100%;
+  margin-top: 20px;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+.auto{
+  color:black;
+}
+#Automated-content{
+  color: black;
+  text-decoration-color: black;
+}
+
+nav ul {
+  color: black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 30px;
+}
+nav ul li:hover {
+ background-color: grey;
+ border-radius: 10px;
+
+}
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(16, 15, 15);
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+ 
+}
+
+nav ul li a:hover {
+  color: #42413f; /* Golden highlight */
+  
+}
+
+/* Hero Section */
+.hero {
+  background: url('homepage\bg1.jpg') center/cover no-repeat;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(to right, #37b2b2,rgb(153, 76, 76), #ffff); 
+  border-top: 2px solid rgb(239, 233, 233);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  transform: translateY(10px);
+  transition: transform 0.4s ease-in-out;
+}
+
+.hero:hover .hero-content {
+  transform: translateY(0px);
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin: 0;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+#image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+#image img {
+  width: 100%; /* Adjust width as needed */
+  /* Prevent it from getting too large */
+  height: 35vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  display: block;
+}
+#image:hover{
+  transform: scale(1.05);
+}
+#image:hover img{
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+/* Main Content */
+.main-content {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #f9f9f9,#2c2e2e)
+}
+
+.about, .map-section {
+  width: 45%;
+  background: linear-gradient(to bottom, #eee, #ccc);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  color: black;
+}
+#about{
+  color: rgb(73, 72, 72);
+}
+#map{
+  color: rgb(73, 72, 72);;
+}
+.about:hover, .map-section:hover {
+  transform: scale(1.05);
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+}
+/* Our Vision Section Styles */
+#Ourvision {
+  height: 12vh;
+  background-color: #ffffff;       /* Light background for the section */
+  padding: 40px 20px;              /* Add padding around the section */
+  text-align: center;              /* Center-align the content */
+  color: #333;   /* Add a green top border for emphasis */
+}
+
+/* Heading Styling */
+#Ourvision h3 {
+  font-size: 36px;                 /* Large font size for the heading */
+  font-weight: bold;               /* Bold heading for emphasis */
+  color: #2c3e50;                  /* Dark color for the heading */
+  margin-bottom: 20px;             /* Space below the heading */
+}
+
+/* Paragraph Styling (for the vision statement) */
+#Ourvision p {
+  font-size: 20px;                 /* Medium font size for the quote */
+  line-height: 1.6;                /* Add line height for readability */
+  margin-bottom: 30px;             /* Space below the paragraph */
+  max-width: 800px;                /* Limit width for readability */
+  margin-left: auto;               /* Center the content horizontally */
+  margin-right: auto;              /* Center the content horizontally */
+  color: #555;                     /* Slightly lighter text color */
+  font-style: italic;              /* Italicize the quote to emphasize it */
+}
+
+/* Optional: Add a background image or color gradient for a more dynamic look */
+#Ourvision {
+  background-image: linear-gradient(to right, #2c2e2e, #f9f9f9);  /* Subtle gradient background */
+  color: #c2bebe; 
+  height: 20vh;   
+  border-bottom: 10px;                         /* Dark text color to stand out */
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+  #Ourvision h3 {
+      font-size: 28px;           /* Slightly smaller font size for smaller screens */
+  }
+
+  #Ourvision p {
+      font-size: 18px;           /* Adjust font size for paragraph on smaller devices */
+      max-width: 100%;           /* Ensure paragraph width takes full screen on mobile */
+      margin-left: 20px;         /* Add left margin for mobile */
+      margin-right: 20px;
+             /* Add right margin for mobile */
+  }
+}
+/* Footer */
+footer {
+  background: linear-gradient(to right, #ded7d7, #444);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+footer:hover {
+  background: linear-gradient(to right, #444, #666);
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #FFD700;
+  transform: scale(1.1);
+}

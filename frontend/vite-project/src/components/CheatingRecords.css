@@ -1,0 +1,158 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Background with a gradient */
+body {
+  background: linear-gradient(135deg, #2a2d3e, #1f2335);
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+/* Container with Glassmorphism Effect */
+.cheating-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Container Hover Effect */
+.cheating-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Title Styling */
+.cheating-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00c6ff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Loading, Error, and No Records Message */
+.loading,
+.error,
+.no-records {
+  font-size: 18px;
+  color: #ddd;
+  padding: 15px;
+}
+
+/* Grid Layout */
+.cheating-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 10px;
+}
+
+/* Cheating Report Card */
+.cheating-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+/* Hover Animation */
+.cheating-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Title */
+.cheating-card h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00c6ff;
+  margin-bottom: 10px;
+}
+
+/* Card Content */
+.cheating-card p {
+  font-size: 16px;
+  color: #eee;
+  margin: 5px 0;
+  opacity: 0.9;
+}
+
+/* Status Label */
+.status {
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Status Colors */
+.status.pending {
+  background: rgba(211, 84, 0, 0.2);
+  color: #e67e22;
+  border: 1px solid #e67e22;
+}
+
+.status.verified {
+  background: rgba(39, 174, 96, 0.2);
+  color: #2ecc71;
+  border: 1px solid #2ecc71;
+}
+
+.status.cleared {
+  background: rgba(41, 128, 185, 0.2);
+  color: #3498db;
+  border: 1px solid #3498db;
+}
+
+/* Smooth Button Effects */
+button {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cheating-container {
+    padding: 15px;
+  }
+
+  .cheating-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cheating-card {
+    padding: 18px;
+  }
+}

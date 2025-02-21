@@ -1,0 +1,161 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Center the Form with Glassmorphism */
+.complaint-container {
+  max-width: 550px;
+  margin: 60px auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Form Title */
+.form-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* Form Styling */
+.complaint-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input Fields */
+.complaint-form label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+}
+
+/* Input Fields Styling */
+.complaint-form input,
+.complaint-form select,
+.complaint-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.complaint-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* Placeholder Styling */
+.complaint-form input::placeholder,
+.complaint-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Input Focus Effect */
+.complaint-form input:focus,
+.complaint-form select:focus,
+.complaint-form textarea:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border-left: 4px solid #00c6ff;
+  padding-left: 12px;
+}
+
+/* Checkbox Label */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.checkbox-label input {
+  margin-right: 10px;
+}
+
+/* Submit Button */
+.complaint-form button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  margin-top: 15px;
+}
+
+.complaint-form button:hover {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  transform: scale(1.05);
+}
+
+/* Success & Error Messages */
+.success-message {
+  color: #32cd32;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .complaint-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 22px;
+  }
+
+  .complaint-form input,
+  .complaint-form select,
+  .complaint-form textarea {
+    font-size: 14px;
+  }
+}

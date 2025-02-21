@@ -1,0 +1,145 @@
+/* Modern Admin Register Page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Full-Screen Centered Layout */
+.admin-register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e1e2a 0%, #3a3a52 100%);
+}
+
+/* Glassmorphism Register Box */
+.admin-register-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 400px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.admin-register-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Title Styling */
+.admin-register-title {
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Registration Form */
+.admin-register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input Group */
+.admin-input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.admin-input-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Stylish Input Fields */
+.admin-input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.admin-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.admin-input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border-left: 4px solid #00c6ff;
+  padding-left: 12px;
+}
+
+/* Error Message */
+.admin-error {
+  color: #ff4d4d;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Stylish Register Button */
+.admin-register-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.admin-register-btn:hover {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  transform: scale(1.05);
+}
+
+/* Login Link */
+.admin-login-link {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.admin-login-link a {
+  color: #00c6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.admin-login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 450px) {
+  .admin-register-box {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .admin-register-title {
+    font-size: 22px;
+  }
+}

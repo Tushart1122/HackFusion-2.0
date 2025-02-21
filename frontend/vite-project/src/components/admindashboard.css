@@ -1,0 +1,204 @@
+/* Admin Dashboard Styles */
+body{
+height: 100vh;
+width: 100vw;
+}
+.admin-dashboard-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #a7adae;
+  color: rgb(155, 55, 55);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(135deg, rgba(194, 185, 185, 0.2), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(10px);
+  position: relative;
+  transition: all 0.4s ease;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar.closed {
+  width: 60px;
+  overflow: hidden;
+}
+
+.sidebar .close-btn {
+  background:none;
+  border: none;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: transform 0.3s;
+}
+
+.sidebar .close-btn:hover {
+  transform: scale(1.2);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  padding: 12px 15px;
+  margin: 8px 0;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.sidebar ul li:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* Admin Content */
+.admin-dashboard-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  border-radius: 12px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.admin-navbar h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logout-btn {
+  background: #ff4d4d;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover {
+  background: #e60000;
+}
+
+/* Dashboard Sections */
+.dashboard-sections {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dashboard-sections h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(left, #878a8b, #889db7);
+  -webkit-text-fill-color: transparent;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* Cards */
+.dashboard-card {
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card Hover Effects */
+.dashboard-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Card Backgrounds */
+.dashboard-card.blue {
+  background: linear-gradient(to right, #1e90ff, #0d6efd);
+}
+
+.dashboard-card.green {
+  background: linear-gradient(to right, #28a745, #20c997);
+}
+
+.dashboard-card.yellow {
+  background: linear-gradient(to right, #ffc107, #ffb400);
+}
+
+.dashboard-card.red {
+  background: linear-gradient(to right, #dc3545, #ff4d4d);
+}
+
+.dashboard-card.purple {
+  background: linear-gradient(to right, #6f42c1, #9b59b6);
+}
+
+.dashboard-card.cyan {
+  background: linear-gradient(to right, #17a2b8, #39c0ed);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .admin-dashboard-container {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 10px;
+  }
+
+  .sidebar ul {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .sidebar ul li {
+      margin: 5px;
+  }
+
+  .dashboard-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
