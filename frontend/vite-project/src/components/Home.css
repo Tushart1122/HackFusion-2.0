@@ -11,35 +11,43 @@ body {
 
 /* Header Section */
 header {
-  position: fixed;
+  position: sticky;
   display: flex;
   z-index: 1000;
-  width: 100%;
+  width: 100vw;
+  height: 10vh;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color:white;
   padding: 15px 20px;
   color: white;
   transition: background 0.3s ease-in-out;
 }
+#home-div{
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
 .logo img {
   height: 70px;
   width: 70px;
-  transform: scale(1);
-  transition: transform 0.3s ease-in-out;
+  /* transform: scale(1); */
+  /* transition: transform 0.3s ease-in-out; */
   border: 100%;
   margin-top: 20px;
+  border-radius: 50px;
 }
 
 .logo img:hover {
   transform: scale(1.1);
 }
-.auto{
+#auto{
   color:black;
 }
 #Automated-content{
   color: black;
   text-decoration-color: black;
+  margin-top: 20px;
 }
 
 nav ul {
@@ -51,12 +59,12 @@ nav ul {
   cursor: pointer;
   font-size: 30px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 nav ul li:hover {
- background-color: grey;
+ background-color: rgb(125, 138, 48);
  border-radius: 10px;
-
+ padding: 10px;
 }
 nav ul li {
   margin: 0 15px;

@@ -8,15 +8,16 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div id="home-div">
       {/* Header Section */}
       <header className="header">
         <div className="logo">
           <img src={logo} alt="College Logo" />
+          <p>SGGS</p>
         </div>
         <section className="Automated">
         <div className="Automated-content">
-          <h1 id="auto" style={{ color: "black", fontSize: "2.5rem", fontWeight: "bold", textAlign: "center", position: "absolute", top: "20px", left: "50%", transform: "translateX(-50%)" }}>Automated Paperless Transparent College System</h1>
+          <h1 id="auto">Automated Paperless Transparent College System</h1>
           
         </div>
       </section>
